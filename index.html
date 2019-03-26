@@ -28,7 +28,33 @@
 <li><a href="3.html"><font color="red">javascript</font></a></li>
 </ol>
 -->
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if(this.value==='night'){
+	target.style.backgroundColor = 'black';
+	target.style.color = 'white';
+	this.value = 'day';
 
+  var links = document.querySelectorAll('a');
+  var i = 0;
+  while(i<links.length){
+    links[i].style.color='powderblue';
+    i=i+1;
+  }
+}
+else {
+	target.style.backgroundColor = 'white';
+	target.style.color = 'black';
+	this.value = 'night';
+
+  var links = document.querySelectorAll('a');
+  var i = 0;
+  while(i<links.length){
+    links[i].style.color='blue';
+    i=i+1;
+  }
+}
+">
   <div id="article">
     <h2>welcome</h2>
     <p><iframe width="560" height="315" src="https://www.youtube.com/embed/F9GujgK0y2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
